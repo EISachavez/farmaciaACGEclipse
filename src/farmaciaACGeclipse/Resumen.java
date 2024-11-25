@@ -69,6 +69,10 @@ public class Resumen extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				System.out.println("Pedido enviado con las siguientes caracteristicas: ");
 		        pedido.pedidoToString();
+		        
+		        Pedidos pedidos = new Pedidos();
+		        pedidos.frmPedidosFarmaciaAcg.setVisible(true);
+		        frmResumenDelPedido.dispose();
 			}
 		});
 		btnNewButton.setBackground(new Color(0, 128, 128));
